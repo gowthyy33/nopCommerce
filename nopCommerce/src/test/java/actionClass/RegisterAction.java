@@ -103,10 +103,11 @@ public class RegisterAction {
 	}
 	
 	@Test(priority=8) 
-	public void regUser() {
+	public void regUser() throws InterruptedException {
 		regMethod = new RegisterWebElement(driver);
 
 		regMethod.registerBtn().click();
+		Thread.sleep(5000);
 	}
 	
 	@AfterTest
