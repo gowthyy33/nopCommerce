@@ -5,8 +5,11 @@
     <classes>
       <class name="actionClass.LoginAction">
         <methods>
+          <include name="logout"/>
+          <include name="loginclick"/>
+          <include name="startTest"/>
+          <include name="passCreds"/>
           <include name="quitBrowser"/>
-          <include name="invokeBrowser"/>
           <include name="login"/>
         </methods>
       </class> <!-- actionClass.LoginAction -->
