@@ -27,6 +27,10 @@ public class LoginWebElement {
 	By recoveryMail = By.xpath("//*[@id=\"Email\"]");
 	By recoverBtn = By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/form/div[2]/button");
 	By emailNotFound = By.xpath("//*[@id=\"bar-notification\"]/div/p");
+	//fgyg
+	
+	
+	
 	
 	
 }
