@@ -7,6 +7,9 @@ import org.openqa.selenium.WebElement;
 public class LoginWebElement {
 	WebDriver driver;
 	
+	public LoginWebElement() {
+		
+	}
 	public LoginWebElement(WebDriver driver) {
 		this.driver = driver;
 	}
@@ -33,6 +36,18 @@ public class LoginWebElement {
 	By logoutMain = By.xpath("/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[2]/a");
 	
 	// method
+	
+	public WebElement forgetPassword() {
+		return driver.findElement(forgetPassword);
+	}
+	
+	public WebElement recoveryMail() {
+		return driver.findElement(recoveryMail);
+	}
+	
+	public WebElement recoverBtn() {
+		return driver.findElement(recoverBtn);
+	}
 	
 	public WebElement loginMenu() {
 		return driver.findElement(LoginMenu);

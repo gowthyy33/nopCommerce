@@ -3,16 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="actionClass.LoginAction">
+      <class name="actionClass.AddressAction">
         <methods>
-          <include name="logout"/>
-          <include name="loginclick"/>
-          <include name="startTest"/>
-          <include name="passCreds"/>
+          <include name="detailAdding"/>
+          <include name="clickAdd"/>
+          <include name="invokeBrowser"/>
           <include name="quitBrowser"/>
-          <include name="login"/>
+          <include name="openMyAcc"/>
         </methods>
-      </class> <!-- actionClass.LoginAction -->
+      </class> <!-- actionClass.AddressAction -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

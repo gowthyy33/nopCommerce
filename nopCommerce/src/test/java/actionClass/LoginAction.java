@@ -1,5 +1,7 @@
 package actionClass;
 
+import static org.testng.Assert.assertEquals;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -29,11 +31,7 @@ public class LoginAction {
 	
 	  
 	  
-	  @BeforeClass
-	  public void startTest() {
-			report = new ExtentReports(System.getProperty("./src/test/java")+"ExtentReportResults.html");
-			test = report.startTest("nopCommerceReport");
-		}
+	  
 	  @SuppressWarnings("deprecation")
 	  
 	  @BeforeTest
@@ -56,7 +54,6 @@ public class LoginAction {
 		driver.get("https://demo.nopcommerce.com/");
 		logMethod.loginMenu().click();
 		
-
 	}
 	
 	@Test(priority = 1)
@@ -74,14 +71,10 @@ public class LoginAction {
 		
 		
 		
-		//System.out.print(gmail);
-		
-		
-		
-		  logMethod.emailLogin().sendKeys(gmail); 
-		  Thread.sleep(3000);
-		  logMethod.passwordLogin().sendKeys(pass); 
-		  Thread.sleep(3000);
+		 logMethod.emailLogin().sendKeys(gmail); 
+		 Thread.sleep(3000);
+		 logMethod.passwordLogin().sendKeys(pass); 
+		 Thread.sleep(3000);
 		 
 }
 	
@@ -90,17 +83,17 @@ public class LoginAction {
 		logMethod = new LoginWebElement(driver);
 		logMethod.loginBtn().click();
 		Thread.sleep(3000);
+		String expTitle = "nopCommerce demo store";
+		String gotTitle = driver.getTitle();
 		
-		///report
-		
-		test.log(LogStatus.PASS, "Login successfull");
+		assertEquals(expTitle, gotTitle); 
 	
 		
 	}
 	
 	
 	//logout code
-	@Test(priority=3)
+	@Test(priority=3 ,enabled=false)
 	public void logout() {
 		
 		logMethod = new LoginWebElement(driver);
@@ -109,11 +102,7 @@ public class LoginAction {
 		//login check report
 	}
 	
-	@AfterClass
-	public void dummy()
-	{
-		System.out.print("done");
-	}
+	
 	@AfterTest
 	public void quitBrowser() throws InterruptedException {
 		Thread.sleep(5000);
