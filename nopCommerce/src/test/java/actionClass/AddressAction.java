@@ -70,13 +70,7 @@ public class AddressAction {
 	@Test (priority = 2)
 	public void login() throws InterruptedException {
 		logMethod.loginBtn().click();
-		Thread.sleep(3000);
-		
-		///report
-		
-		//test.log(LogStatus.PASS, "Login successfull");
-	
-		
+		Thread.sleep(3000);		
 	}
 	
 	@Test(priority = 3)
@@ -85,8 +79,7 @@ public class AddressAction {
 		driver.get("https://demo.nopcommerce.com/customer/info");
 		Thread.sleep(1000);
 		addMeth.accountMain().click();
-		Thread.sleep(2000);
-		
+		Thread.sleep(2000);	
 	}
 	
 	@Test(priority=4)
@@ -103,6 +96,7 @@ public class AddressAction {
 	@Test(priority=5)
 	
 	public void detailAdding() throws IOException, InterruptedException {
+		
 		FileInputStream fileInput = new FileInputStream("./src/test/java/actionClass/cred.properties");
         Properties properties = new Properties();
         properties.load(fileInput);
@@ -118,17 +112,14 @@ public class AddressAction {
         addMeth.zipAdd().sendKeys(properties.getProperty("zipAdd"));
         addMeth.phoneNumber().sendKeys(properties.getProperty("phoneNumberAdd"));
         
-      
         Select selCountry = new Select(addMeth.countryAdd());
         //Select selState = new Select(addMeth.stateAdd());
         
         selCountry.selectByValue("133");
-        
-        
+         
         Thread.sleep(2000);
-        
-        
-        addMeth.saveBtn();
+       
+        addMeth.saveBtn().click();
         
 	}
 	

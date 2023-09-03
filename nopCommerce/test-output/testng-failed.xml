@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="actionClass.AddressAction">
+      <class name="actionClass.BookAction">
         <methods>
-          <include name="detailAdding"/>
-          <include name="clickAdd"/>
-          <include name="invokeBrowser"/>
+          <include name="wishlist"/>
           <include name="quitBrowser"/>
-          <include name="openMyAcc"/>
+          <include name="invokeBrowser"/>
         </methods>
-      </class> <!-- actionClass.AddressAction -->
+      </class> <!-- actionClass.BookAction -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

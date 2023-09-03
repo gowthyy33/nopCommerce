@@ -1,33 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-01T16:11:47 IST" name="Default suite" finished-at="2023-09-01T16:12:24 IST" duration-ms="36938">
+  <suite started-at="2023-09-03T19:33:26 IST" name="Default suite" finished-at="2023-09-03T19:34:18 IST" duration-ms="52031">
     <groups>
     </groups>
-    <test started-at="2023-09-01T16:11:47 IST" name="Default test" finished-at="2023-09-01T16:12:24 IST" duration-ms="36938">
-      <class name="actionClass.ForgetPassword">
-        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:actionClass.ForgetPassword@77f80c04]" started-at="2023-09-01T16:11:47 IST" name="invokeBrowser" finished-at="2023-09-01T16:11:49 IST" duration-ms="2091" status="PASS">
+    <test started-at="2023-09-03T19:33:26 IST" name="Default test" finished-at="2023-09-03T19:34:18 IST" duration-ms="52031">
+      <class name="actionClass.BookAction">
+        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:actionClass.BookAction@baf1bb3]" started-at="2023-09-03T19:33:26 IST" name="invokeBrowser" finished-at="2023-09-03T19:33:26 IST" duration-ms="138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method signature="forgetPassClick()[pri:0, instance:actionClass.ForgetPassword@77f80c04]" started-at="2023-09-01T16:11:49 IST" name="forgetPassClick" finished-at="2023-09-01T16:12:16 IST" duration-ms="26892" status="PASS">
+        <test-method signature="loginclick()[pri:0, instance:actionClass.BookAction@baf1bb3]" started-at="2023-09-03T19:33:27 IST" name="loginclick" finished-at="2023-09-03T19:33:30 IST" duration-ms="3377" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- forgetPassClick -->
-        <test-method signature="enterRecoveryMail()[pri:1, instance:actionClass.ForgetPassword@77f80c04]" started-at="2023-09-01T16:12:16 IST" name="enterRecoveryMail" finished-at="2023-09-01T16:12:20 IST" duration-ms="4114" status="PASS">
+        </test-method> <!-- loginclick -->
+        <test-method signature="passCreds()[pri:1, instance:actionClass.BookAction@baf1bb3]" started-at="2023-09-03T19:33:30 IST" name="passCreds" finished-at="2023-09-03T19:33:36 IST" duration-ms="6183" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterRecoveryMail -->
-        <test-method signature="recoverBtn()[pri:2, instance:actionClass.ForgetPassword@77f80c04]" started-at="2023-09-01T16:12:20 IST" name="recoverBtn" finished-at="2023-09-01T16:12:21 IST" duration-ms="578" status="PASS">
+        </test-method> <!-- passCreds -->
+        <test-method signature="login()[pri:2, instance:actionClass.BookAction@baf1bb3]" started-at="2023-09-03T19:33:36 IST" name="login" finished-at="2023-09-03T19:33:41 IST" duration-ms="4734" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- recoverBtn -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:actionClass.ForgetPassword@77f80c04]" started-at="2023-09-01T16:12:21 IST" name="quitBrowser" finished-at="2023-09-01T16:12:24 IST" duration-ms="3199" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="clickBook()[pri:3, instance:actionClass.BookAction@baf1bb3]" started-at="2023-09-03T19:33:41 IST" name="clickBook" finished-at="2023-09-03T19:33:44 IST" duration-ms="3099" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickBook -->
+        <test-method signature="bookSort()[pri:4, instance:actionClass.BookAction@baf1bb3]" started-at="2023-09-03T19:33:44 IST" name="bookSort" finished-at="2023-09-03T19:33:49 IST" duration-ms="5225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookSort -->
+        <test-method signature="selectBook()[pri:5, instance:actionClass.BookAction@baf1bb3]" started-at="2023-09-03T19:33:49 IST" name="selectBook" finished-at="2023-09-03T19:33:53 IST" duration-ms="3832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectBook -->
+        <test-method signature="addCartBook()[pri:6, instance:actionClass.BookAction@baf1bb3]" started-at="2023-09-03T19:33:53 IST" name="addCartBook" finished-at="2023-09-03T19:33:57 IST" duration-ms="4105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCartBook -->
+        <test-method signature="wishlist()[pri:7, instance:actionClass.BookAction@baf1bb3]" started-at="2023-09-03T19:33:57 IST" name="wishlist" finished-at="2023-09-03T19:34:02 IST" duration-ms="5080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wishlist -->
+        <test-method signature="clickCompare()[pri:8, instance:actionClass.BookAction@baf1bb3]" started-at="2023-09-03T19:34:02 IST" name="clickCompare" finished-at="2023-09-03T19:34:04 IST" duration-ms="2073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCompare -->
+        <test-method signature="emailFriend()[pri:9, instance:actionClass.BookAction@baf1bb3]" started-at="2023-09-03T19:34:04 IST" name="emailFriend" finished-at="2023-09-03T19:34:16 IST" duration-ms="11869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emailFriend -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:actionClass.BookAction@baf1bb3]" started-at="2023-09-03T19:34:16 IST" name="quitBrowser" finished-at="2023-09-03T19:34:18 IST" duration-ms="2255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- actionClass.ForgetPassword -->
+      </class> <!-- actionClass.BookAction -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
